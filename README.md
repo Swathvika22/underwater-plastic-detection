@@ -1,32 +1,41 @@
-Title: Pelagic Vision: Underwater Plastic Detection & Volume Estimation
+# Pelagic Vision: Underwater Plastic Detection & Volume Estimation
 
-Description: An AI-powered solution to detect underwater debris and estimate its volume using YOLOv8 instance segmentation.
+## Project Overview
+Pelagic Vision is an advanced computer vision framework designed to identify and measure the volume of plastic debris in underwater environments. Utilizing a **YOLOv8-based instance segmentation** model, this application provides real-time detection, classification, and volumetric analysis to assist in marine pollution research and environmental monitoring.
 
-Tech Stack: FastAPI, Ultralytics YOLOv8, Docker, HTML/CSS.
+## Key Features
+*   **Deep Learning Pipeline**: Built on the YOLOv8 architecture, optimized for high-speed instance segmentation of marine debris.
+*   **Volumetric Analysis**: Implements an elliptical cylinder approximation algorithm to estimate the physical volume ($cm^3$) of detected plastic items based on pixel-to-centimeter calibration.
+*   **Modern Web Interface**: A custom, high-performance web dashboard developed with **FastAPI** and asynchronous JavaScript, offering a sleek, dark-themed marine UI.
+*   **Scalable Deployment**: Fully containerized using **Docker**, ensuring consistency across development and production environments on cloud platforms like Hugging Face Spaces.
 
-2. Deploy to Hugging Face Spaces
-Now that GitHub has the code, Hugging Face will act as your "24/7 server."
+## Architecture
+*   **Model**: YOLOv8-seg (Segmented)
+*   **Backend**: FastAPI
+*   **Frontend**: HTML5 / CSS3 / JavaScript (Glassmorphism UI)
+*   **Deployment**: Docker
 
-Log in to Hugging Face and click your profile icon (top right) -> New Space.
+## Installation & Local Development
+To run this application locally, ensure you have [Docker](https://www.docker.com/) installed.
 
-Configure the Space:
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/underwater_plastic_detection.git](https://github.com/YOUR_USERNAME/underwater_plastic_detection.git)
+    cd underwater_plastic_detection
+    ```
+2.  **Build the Docker image:**
+    ```bash
+    docker build -t pelagic-vision .
+    ```
+3.  **Run the container:**
+    ```bash
+    docker run -p 7860:7860 pelagic-vision
+    ```
+4.  Access the app at `http://localhost:7860`.
 
-Space name: underwater-plastic-detection
+## Academic Context
+This project was developed as part of an M.Tech/B.E. research initiative at **Chaitanya Bharathi Institute of Technology (CBIT)**. The framework explores dimensional resolution and explainability in genomic and environmental artificial intelligence.
 
-Select the SDK: Choose Docker.
-
-Visibility: Public.
-
-Connect to GitHub:
-
-Once the Space is created, go to the Settings tab of your new Hugging Face Space.
-
-Scroll down to the GitHub integration section.
-
-Click Connect to GitHub and select your underwater-plastic-detection repository.
-
-Wait for the Build:
-
-Hugging Face will instantly see your Dockerfile. It will automatically pull the code from GitHub and start the build process.
-
-Check the "Build logs" tab. If everything is configured correctly, it will show a "Build successful" message within a few minutes.
+## Supervisors & Collaborators
+*   **Academic Supervision**: Dr. T. Srinivas, K. Swathi, and G. Srikanth
+*   **Collaborators**: V. Lavanya
