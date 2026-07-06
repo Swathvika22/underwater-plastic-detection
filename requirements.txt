@@ -1,0 +1,8 @@
+ultralytics==8.2.0
+fastapi
+python-multipart
+uvicorn
+numpy
+Pillow
+torchvision --index-url https://download.pytorch.org/whl/cpu
+torch --index-url https://download.pytorch.org/whl/cpu
