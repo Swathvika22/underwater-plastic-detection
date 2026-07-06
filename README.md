@@ -1,7 +1,7 @@
-# Pelagic Vision: Underwater Plastic Detection & Volume Estimation
+# Underwater Plastic Detection & Volume Estimation
 
 ## Project Overview
-Pelagic Vision is an advanced computer vision framework designed to identify and measure the volume of plastic debris in underwater environments. Utilizing a **YOLOv8-based instance segmentation** model, this application provides real-time detection, classification, and volumetric analysis to assist in marine pollution research and environmental monitoring.
+This project is an advanced computer vision framework designed to identify and measure the volume of plastic debris in underwater environments. Utilizing a **YOLOv8-based instance segmentation** model, this application provides real-time detection, classification, and volumetric analysis to assist in marine pollution research and environmental monitoring.
 
 ## Key Features
 *   **Deep Learning Pipeline**: Built on the YOLOv8 architecture, optimized for high-speed instance segmentation of marine debris.
